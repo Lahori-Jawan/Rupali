@@ -39,8 +39,8 @@ class FindExpiredId extends Command
      * Execute the console command.
      *
      * @return mixed
-     */
-	
+	 */
+	 
 	public function handle()
 	{
 		$ZERO = 0;
