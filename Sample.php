@@ -49,7 +49,7 @@ class FindExpiredId extends Command
 		$users = User::all();
 		
 		foreach($users as $user){
-			
+
 			$expiryDate = $user->qidexpire_on;
 			
 			if($today->diffInDays($expiryDate, false) <= $MONTH && $today->diffInDays($expiryDate, false) >= $ZERO){
